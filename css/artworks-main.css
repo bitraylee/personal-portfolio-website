@@ -1,0 +1,198 @@
+/*Navbar Styling*/
+body {
+   overflow-x: hidden;
+}
+.navbar {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   z-index: 2;
+   position: fixed;
+
+   /* background-color: red; */
+}
+
+.navbar .flex-container {
+   width: 90%;
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .flex-container .navbar-logo {
+}
+.navbar .flex-container .navbar-links li {
+   text-align: right;
+   padding: 5px 0;
+}
+/* Navbar Styling ends */
+
+/* Index banner stying starts */
+.index-banner {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.index-banner .flex-container {
+   width: 75vw;
+   height: 90vh;
+   background-color: red;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-end;
+}
+
+/* Index banner stying ends */
+
+/* Index main styling starts */
+
+/* Common styling */
+.index-main {
+   width: 100vw;
+   height: 500vh;
+
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+
+   background-color: greenyellow;
+}
+.index-main .artwork {
+   width: 75%;
+   height: 100vw;
+   background-color: red;
+
+   padding: 40px 0;
+}
+/* Artwork 1 styling */
+.index-main .artwork-1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.index-main .artwork-1 .image-container {
+   width: 750px;
+   height: 100vh;
+   background: #333333 0% 0% no-repeat padding-box;
+   opacity: 1;
+}
+/* Artwork 2 styling */
+.index-main .artwork-2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.index-main .artwork-2 .image-container {
+   width: 100%;
+   height: 90vh;
+   background: #333333 0% 0% no-repeat padding-box;
+   opacity: 1;
+
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.index-main .artwork-2 .image-container .title {
+   color: #fefefe;
+   font-size: 30px;
+}
+
+/* Artwork 3 styling */
+.index-main .artwork-3 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.index-main .artwork-3 .image-container {
+   width: 600px;
+   height: 100vh;
+   background: #333333 0% 0% no-repeat padding-box;
+   opacity: 1;
+}
+/* Artwork 4 styling */
+.index-main .grid-container {
+   width: 75%;
+   height: 100vh;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 0.5fr 1.5fr 1fr;
+   gap: 20px 20px;
+   grid-template-areas:
+      "image-container-1 image-container-1 image-container-1 image-container-1"
+      "image-container-1 image-container-1 image-container-1 image-container-1"
+      "image-container-2 image-container-2 title title"
+      "image-container-2 image-container-2 title title";
+}
+.index-main .grid-container .image-container-1 {
+   grid-area: image-container-1;
+
+   background-color: #333;
+}
+.index-main .grid-container .image-container-2 {
+   grid-area: image-container-2;
+
+   background-color: #333;
+   /* padding-top: 20px; */
+}
+.index-main .grid-container .title {
+   grid-area: title;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+.index-main .grid-container .title h1 {
+   text-align: right;
+}
+
+.index-main .statement {
+   width: 100%;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* Index main  styling ends*/
+
+/* Footer styling */
+.footer {
+   width: 100vw;
+   height: 100vh;
+   background-color: #333;
+
+   z-index: 3;
+}
+.footer .flex-container {
+   margin-top: 20vh;
+   width: 100%;
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .flex-container .footer-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.footer .flex-container .footer-links li {
+   padding: 50px 0;
+}
+.footer .flex-container .footer-social {
+   display: flex;
+   flex-direction: row;
+   padding: 50px 0;
+}
