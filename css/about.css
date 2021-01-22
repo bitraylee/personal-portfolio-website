@@ -1,0 +1,130 @@
+/*Navbar Styling*/
+body {
+   overflow-x: hidden;
+}
+.navbar {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   z-index: 2;
+   position: fixed;
+
+   /* background-color: red; */
+}
+
+.navbar .flex-container {
+   width: 90%;
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .flex-container .navbar-logo {
+}
+.navbar .flex-container .navbar-links li {
+   text-align: right;
+   padding: 5px 0;
+}
+/* Navbar Styling ends */
+
+/* Main stylig begins */
+.index-banner {
+   width: 100vw;
+   height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: greenyellow;
+}
+.index-banner .statement {
+   width: fit-content;
+   height: fit-content;
+   background-color: red;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.information {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.information .grid-container {
+   width: 75%;
+   height: 70vh;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 0px 0px;
+   grid-template-areas:
+      "skills skills tools tools"
+      "education education education education";
+}
+
+.skills {
+   grid-area: skills;
+   text-align: center;
+}
+
+.tools {
+   grid-area: tools;
+   text-align: center;
+}
+
+.education {
+   grid-area: education;
+   text-align: left;
+}
+
+.limitless {
+   width: 100vw;
+   text-align: center;
+}
+/* Main styling ends */
+/* Footer styling */
+.footer {
+   width: 100vw;
+   height: 100vh;
+   background-color: #333;
+
+   z-index: 3;
+}
+.footer .flex-container {
+   margin-top: 20vh;
+   width: 100%;
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .flex-container .footer-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.footer .flex-container .footer-links li {
+   padding: 50px 0;
+}
+.footer .flex-container .footer-social {
+   display: flex;
+   flex-direction: row;
+   padding: 50px 0;
+}
