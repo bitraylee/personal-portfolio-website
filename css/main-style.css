@@ -1,0 +1,146 @@
+/*Navbar Styling*/
+body {
+   overflow-x: hidden;
+}
+.navbar {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   z-index: 2;
+   position: fixed;
+
+   /* background-color: red; */
+}
+
+.navbar .flex-container {
+   width: 90%;
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .flex-container .navbar-logo {
+}
+.navbar .flex-container .navbar-links li {
+   text-align: right;
+   padding: 5px 0;
+}
+/* Navbar Styling ends */
+/* Index banner styling */
+.index-banner {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.index-banner .flex-container {
+   width: 80%;
+   margin: 0 20px;
+   height: 100vh;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.index-banner .flex-container .banner-statement {
+}
+.index-banner .flex-container .banner-links {
+}
+/* Index banner styling ends */
+/* Index main styling */
+.index-main {
+   width: 100vw;
+   height: 300vh;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+.index-main .part {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* Main element styling for type-1 boxes: artworks and about container*/
+.index-main .type-1 .image-container {
+   width: 455px;
+   height: 100vh;
+   background-color: red;
+   z-index: -1;
+   transform: translateX(-300px);
+}
+
+.index-main .type-1 .title {
+   position: absolute;
+   height: fit-content;
+   /* transform: translateY(50vh); */
+}
+.index-main .type-1 .number {
+   position: relative;
+   transform: translate(-300px, -40vh);
+   /* transform: translateY(); */
+   top: 20px;
+}
+
+/* Styling for type-2 container */
+
+.index-main .type-2 .image-container {
+   width: 455px;
+   height: 100vh;
+   background-color: red;
+   z-index: -1;
+   transform: translateX(300px);
+}
+
+.index-main .type-2 .title {
+   position: absolute;
+   height: fit-content;
+   /* transform: translateY(50vh); */
+}
+.index-main .type-2 .number {
+   position: relative;
+   transform: translate(770px, -40vh);
+   top: 20px;
+}
+
+/* Footer styling */
+.footer {
+   width: 100vw;
+   height: 100vh;
+   background-color: #333;
+
+   z-index: 3;
+}
+.footer .flex-container {
+   margin-top: 20vh;
+   width: 100%;
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .flex-container .footer-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.footer .flex-container .footer-links li {
+   padding: 50px 0;
+}
+.footer .flex-container .footer-social {
+   display: flex;
+   flex-direction: row;
+   padding: 50px 0;
+}
