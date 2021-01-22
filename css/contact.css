@@ -1,0 +1,76 @@
+.navbar {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   z-index: 2;
+   position: fixed;
+
+   /* background-color: red; */
+}
+
+.navbar .flex-container {
+   width: 90%;
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .flex-container .navbar-logo {
+}
+.navbar .flex-container .navbar-links li {
+   text-align: right;
+   padding: 5px 0;
+}
+
+/* index-main styling */
+.index-main {
+   width: 100vw;
+   height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.index-main .lets-talk {
+   width: 75%;
+   height: 100px;
+
+   text-align: left;
+}
+.grid-container {
+   width: 75%;
+   height: 40vh;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   gap: 20px 20px;
+   grid-template-areas:
+      "name name email email"
+      "message message message message"
+      "message message message message"
+      ". . . submit";
+}
+
+.name {
+   grid-area: name;
+}
+
+.email {
+   grid-area: email;
+}
+
+.message {
+   grid-area: message;
+   resize: none;
+}
+
+.submit {
+   grid-area: submit;
+}
