@@ -4,6 +4,9 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="css/reset.css" />
+
+      <link rel="stylesheet" href="css/load-fonts.css" />
+
       <link rel="stylesheet" href="css/main-style.css" />
       <link
          rel="stylesheet"
@@ -16,7 +19,9 @@
    <body>
       <section class="navbar">
          <div class="flex-container">
-            <div class="navbar-logo">Anshu<br />Mohanta</div>
+            <div class="navbar-logo">
+               <a href="./index.html">Anshu<br />Mohanta</a>
+            </div>
             <ul class="navbar-links">
                <li><a href="./artworks.html">artworks</a></li>
                <li><a href="./designs.html">designs</a></li>
@@ -29,7 +34,12 @@
          <div class="flex-container">
             <div class="banner-statement">
                <h4>Hello there, fellow traveller</h4>
-               <h1>This is <span>Anshu</span>,</h1>
+               <h1>
+                  This is
+                  <span style="font-family: 'Airin'; font-weight: 400"
+                     >Anshu</span
+                  >,
+               </h1>
                <h4>This is my website, hope you like it here :)</h4>
             </div>
             <ul class="banner-links">
@@ -40,7 +50,9 @@
                   <a href="#"><i class="fab fa-github"></i></a>
                </li>
                <li>
-                  <a href="#"><i class="fab fa-deviantart"></i></a>
+                  <a href="#" style="position: relative; left: -5px"
+                     ><i class="fab fa-deviantart"></i
+                  ></a>
                </li>
             </ul>
          </div>
@@ -48,18 +60,18 @@
       <section class="index-main">
          <div class="artworks part type-1">
             <div class="number">01</div>
+            <div class="title"><a href="">Artworks</a></div>
             <div class="image-container"></div>
-            <div class="title">Artworks</div>
          </div>
          <div class="designs part type-2">
             <div class="number">02</div>
+            <div class="title"><a href="">Designs</a></div>
             <div class="image-container"></div>
-            <div class="title">Designs</div>
          </div>
          <div class="about part A type-1">
             <div class="number">03</div>
+            <div class="title"><a href="">About</a></div>
             <div class="image-container"></div>
-            <div class="title">About</div>
          </div>
       </section>
       <section class="footer">

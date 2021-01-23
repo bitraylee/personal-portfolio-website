@@ -1,0 +1,143 @@
+/*Navbar Styling*/
+body {
+   overflow-x: hidden;
+}
+.navbar {
+   width: 100vw;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   z-index: 2;
+   position: fixed;
+
+   /* background-color: red; */
+}
+
+.navbar .flex-container {
+   width: 90%;
+   height: inherit;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar .flex-container .navbar-logo {
+}
+.navbar .flex-container .navbar-links li {
+   text-align: right;
+   padding: 5px 0;
+}
+/* Navbar Styling ends */
+
+/* Index main styling */
+
+.index-main {
+   width: 100vw;
+   height: 1600px;
+
+   background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.index-main .container {
+   width: 75%;
+   height: 1400px;
+   display: flex;
+
+   background-color: greenyellow;
+}
+
+.index-main .container .statement-main {
+   width: 50%;
+}
+.index-main .container .heading-1 {
+   width: 50%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+
+   text-align: right;
+}
+
+/* Index main styling Ends here */
+
+/* Index-1 styling */
+.index-1 {
+   width: 100vw;
+   height: 150vh;
+
+   display: flex;
+   justify-content: center;
+}
+
+.index-1 .grid-container {
+   width: 75%;
+   height: inherit;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   gap: 0px 0px;
+}
+
+.image-container-1 {
+   grid-area: 2 / 6 / 6 / 9;
+   background-color: #333;
+
+   /* height: 700px; */
+}
+
+.heading-2 {
+   grid-area: 3 / 1 / 6 / 4;
+
+   background-color: red;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.image-container-2 {
+   grid-area: 4 / 5 / 8 / 8;
+   background-color: #333;
+
+   /* height: 700px; */
+}
+
+/* Index-1 styling */
+
+/* Footer styling */
+.footer {
+   width: 100vw;
+   height: 100vh;
+   background-color: #333;
+
+   z-index: 3;
+}
+.footer .flex-container {
+   margin-top: 20vh;
+   width: 100%;
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer .flex-container .footer-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.footer .flex-container .footer-links li {
+   padding: 50px 0;
+}
+.footer .flex-container .footer-social {
+   display: flex;
+   flex-direction: row;
+   padding: 50px 0;
+}

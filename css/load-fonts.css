@@ -1,0 +1,10 @@
+@font-face {
+   font-family: "Airin";
+   src: url("../local-fonts/Airin.ttf") format("truetype"); /* IE6-IE8 */
+}
+@font-face {
+   font-family: "Rajdhani";
+   src: url("../local-fonts/Rajdhani-Bold.ttf") format("truetype"); /* IE6-IE8 */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
