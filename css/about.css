@@ -80,18 +80,46 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: #121212;
 
-   background-color: greenyellow;
+   background-image: url("../images/glitched-skull.jpg");
+   background-size: contain;
+   background-repeat: no-repeat;
+
+   background-position: center;
+   background-blend-mode: screen;
+
+   /* opacity: 0.5; */
+
+   /* background-attachment: fixed; */
+   /* filter: opacity(30%); */
 }
 .index-banner .statement {
-   width: fit-content;
-   height: fit-content;
-   background-color: red;
+   width: 100vw;
+   height: 100vh;
 
+   /* background-color: red; */
+   backdrop-filter: brightness(30%);
+   /* backdrop-filter: contrast(95%); */
+   opacity: 1;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+.index-banner .statement h1 {
+   text-align: center;
+   font: normal normal normal 70px/70px Airin;
+   letter-spacing: 0px;
+   color: #fefefe;
+   opacity: 1;
+}
+.index-banner .statement h4 {
+   text-align: left;
+   font: normal normal normal 20px/30px Poppins;
+   letter-spacing: 1.5px;
+   color: #fefefe;
+   opacity: 1;
 }
 
 .information {
@@ -104,8 +132,9 @@ body {
 }
 
 .information .grid-container {
+   margin: 10% 0;
    width: 75%;
-   height: 70vh;
+   height: fit-content;
 
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -120,21 +149,70 @@ body {
    grid-area: skills;
    text-align: center;
 }
+.skills h1 {
+   text-align: center;
+   font: normal normal 500 40px/50px Poppins;
+   letter-spacing: 2.5px;
+   color: #fefefe;
+   padding-bottom: 20px;
+}
+.skills h2 {
+   text-align: center;
+   font: normal normal normal 20px/50px Poppins;
+   letter-spacing: 1.5px;
+   color: #fefefe;
+}
 
 .tools {
    grid-area: tools;
    text-align: center;
+}
+.tools h1 {
+   text-align: center;
+   font: normal normal 500 40px/50px Poppins;
+   letter-spacing: 2.5px;
+   color: #fefefe;
+   padding-bottom: 20px;
+}
+.tools h2 {
+   text-align: center;
+   font: normal normal normal 20px/50px Poppins;
+   letter-spacing: 1.5px;
+   color: #fefefe;
 }
 
 .education {
    grid-area: education;
    text-align: left;
 }
+.education h1 {
+   padding-top: 40px;
+   text-align: center;
+   font: normal normal 500 40px/50px Poppins;
+   letter-spacing: 2.5px;
+   color: #fefefe;
+   padding-bottom: 20px;
+}
+.education h2 {
+   text-align: center;
+   font: normal normal normal 20px/50px Poppins;
+   letter-spacing: 1.5px;
+   color: #fefefe;
+}
 
 .limitless {
-   width: 100vw;
+   /* top: 100px; */
+   padding: 10px 0;
    text-align: center;
+   font-family: "Airin";
+   font-size: 700px;
+   letter-spacing: 1.6px;
+   color: #333;
+   opacity: 1;
+   position: relative;
+   z-index: -1;
 }
+
 /* Main styling ends */
 /* Footer styling */
 .footer {
@@ -142,7 +220,7 @@ body {
    height: 100vh;
    background-color: #222;
 
-   z-index: 3;
+   /* z-index: 1; */
 }
 .footer .flex-container {
    margin-top: 20vh;

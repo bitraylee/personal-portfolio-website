@@ -1,3 +1,9 @@
+body {
+   overflow-x: hidden;
+   background-color: #121212;
+}
+
+/* Navbar styling begins */
 .navbar {
    width: 100vw;
    height: fit-content;
@@ -21,11 +27,50 @@
 }
 
 .navbar .flex-container .navbar-logo {
+   font-family: "Airin";
+   text-align: left;
+   font: normal normal normal 40px/40px Airin;
+   letter-spacing: 0px;
+   opacity: 1;
+}
+.navbar .flex-container .navbar-logo a {
+   text-decoration: none;
+
+   color: #fefefe;
+   transition: 0.3s ease-in-out;
+}
+.navbar .flex-container .navbar-logo a:hover {
+   color: #80ffdb;
+   text-shadow: 0px 0px 10px rgba(128, 255, 219, 0.5);
+
+   transition: 0.3s ease-in-out;
 }
 .navbar .flex-container .navbar-links li {
    text-align: right;
    padding: 5px 0;
+
+   border-bottom: 2px solid #fefefe;
+   width: 0%;
+
+   transition: 0.3s ease-in-out;
 }
+.navbar .flex-container .navbar-links li:hover {
+   /* border-bottom: 2px solid #fefefe; */
+   width: 100%;
+
+   transition: 0.3s ease-in-out;
+}
+.navbar .flex-container .navbar-links li a {
+   text-decoration: none;
+   color: #fefefe;
+
+   text-align: right;
+   font: normal normal normal 15px Poppins;
+   letter-spacing: 0px;
+   color: #fefefe;
+   opacity: 1;
+}
+/* Navbar styling ends */
 
 /* index-main styling */
 .index-main {
@@ -42,6 +87,11 @@
    height: 100px;
 
    text-align: left;
+   /* text-align: center; */
+   font: normal normal normal 70px/50px Poppins;
+   letter-spacing: 0.16px;
+   color: #fefefe;
+   opacity: 1;
 }
 .grid-container {
    width: 75%;
@@ -60,17 +110,100 @@
 
 .name {
    grid-area: name;
+
+   padding: 12px 20px;
+   box-sizing: border-box;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.15);
+   color: white;
+
+   font-family: "Poppins";
+   font-weight: 400;
+   color: #fefefe;
+
+   border-radius: 5px;
+   transition: 0.3s ease-in-out;
+}
+.name::placeholder {
+   font-style: italic;
+   color: rgba(255, 255, 255, 0.6);
+}
+.name:focus {
+   /* font-style: italic; */
+   background-color: rgba(255, 255, 255, 0.35);
+   transition: 0.3s ease-in-out;
 }
 
 .email {
    grid-area: email;
+
+   padding: 12px 20px;
+   box-sizing: border-box;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.15);
+   color: white;
+
+   font-family: "Poppins";
+   font-weight: 400;
+   color: #fefefe;
+
+   border-radius: 5px;
+   transition: 0.3s ease-in-out;
+}
+.email::placeholder {
+   font-style: italic;
+   color: rgba(255, 255, 255, 0.6);
+}
+.email:focus {
+   /* font-style: italic; */
+   background-color: rgba(255, 255, 255, 0.35);
+   transition: 0.3s ease-in-out;
 }
 
 .message {
    grid-area: message;
    resize: none;
+
+   padding: 12px 20px;
+   box-sizing: border-box;
+   border: none;
+   background-color: rgba(255, 255, 255, 0.15);
+   color: white;
+
+   font-family: "Poppins";
+   font-weight: 400;
+   color: #fefefe;
+
+   border-radius: 5px;
+   transition: 0.3s ease-in-out;
+}
+.message::placeholder {
+   font-style: italic;
+   color: rgba(255, 255, 255, 0.6);
+}
+.message:focus {
+   /* font-style: italic; */
+   background-color: rgba(255, 255, 255, 0.35);
+   transition: 0.3s ease-in-out;
 }
 
 .submit {
    grid-area: submit;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border: none;
+   border-radius: 5px;
+
+   font-size: 25px;
+   font-family: "Poppins";
+   color: #fefefe;
+   background-color: #6930c3;
+
+   transition: 0.1s ease-in-out;
+}
+.submit:hover {
+   background-color: rgb(130, 67, 231);
+   box-shadow: 0 0 20px rgb(130, 67, 231, 0.5);
+   transition: 0.1s ease-in-out;
 }

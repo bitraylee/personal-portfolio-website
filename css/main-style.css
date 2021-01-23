@@ -162,10 +162,20 @@ body {
    /* transform: translateY(50vh); */
 }
 .index-main .type-1 .number {
+   display: none;
+
    position: relative;
    transform: translate(-300px, -40vh);
+   left: 50px;
+   /* left: 10%; */
    /* transform: translateY(); */
    top: 20px;
+
+   text-align: center;
+   font: normal normal bold 100px/80px Rajdhani;
+   letter-spacing: 10px;
+   color: #fefefe;
+   opacity: 1;
 }
 
 /* Styling for type-2 container */
@@ -183,9 +193,18 @@ body {
    height: fit-content;
 }
 .index-main .type-2 .number {
+   display: none;
+
    position: relative;
-   transform: translate(770px, -40vh);
+   transform: translate(50vw, -40vh);
    top: 20px;
+   left: -50px;
+
+   text-align: center;
+   font: normal normal bold 100px/80px Rajdhani;
+   letter-spacing: 10px;
+   color: #fefefe;
+   opacity: 1;
 }
 .title a {
    text-decoration: none;
@@ -223,7 +242,9 @@ body {
    /* background-position: -400px; */
 }
 .about .image-container {
-   background: url("../images/glitched-skull.jpg");
+   background-image: url("../images/glitched-skull.jpg");
+   background-blend-mode: lighten;
+   opacity: 0.6;
 }
 
 /* Footer styling */
