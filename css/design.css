@@ -1,6 +1,7 @@
 /*Navbar Styling*/
 body {
    overflow-x: hidden;
+   background-color: #121212;
 }
 .navbar {
    width: 100vw;
@@ -25,11 +26,50 @@ body {
 }
 
 .navbar .flex-container .navbar-logo {
+   font-family: "Airin";
+   text-align: left;
+   font: normal normal normal 40px/40px Airin;
+   letter-spacing: 0px;
+   opacity: 1;
+}
+.navbar .flex-container .navbar-logo a {
+   text-decoration: none;
+
+   color: #fefefe;
+   transition: 0.3s ease-in-out;
+}
+.navbar .flex-container .navbar-logo a:hover {
+   color: #80ffdb;
+   text-shadow: 0px 0px 10px rgba(128, 255, 219, 0.5);
+
+   transition: 0.3s ease-in-out;
 }
 .navbar .flex-container .navbar-links li {
    text-align: right;
    padding: 5px 0;
+
+   border-bottom: 2px solid #fefefe;
+   width: 0%;
+
+   transition: 0.3s ease-in-out;
 }
+.navbar .flex-container .navbar-links li:hover {
+   /* border-bottom: 2px solid #fefefe; */
+   width: 100%;
+
+   transition: 0.3s ease-in-out;
+}
+.navbar .flex-container .navbar-links li a {
+   text-decoration: none;
+   color: #fefefe;
+
+   text-align: right;
+   font: normal normal normal 15px Poppins;
+   letter-spacing: 0px;
+   color: #fefefe;
+   opacity: 1;
+}
+
 /* Navbar Styling ends */
 
 /* Index main styling */
@@ -38,21 +78,39 @@ body {
    width: 100vw;
    height: 1600px;
 
-   background-color: red;
+   /* background-color: red; */
    display: flex;
    justify-content: center;
    align-items: flex-end;
+
+   background-image: url("../images/GFG-KIIT-website-poster-dark-color.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 .index-main .container {
    width: 75%;
-   height: 1400px;
+   height: 1200px;
    display: flex;
 
-   background-color: greenyellow;
+   /* background-color: greenyellow; */
 }
 
 .index-main .container .statement-main {
    width: 50%;
+}
+.index-main .container .statement-main h4 {
+   text-align: left;
+   font: normal normal 300 20px/30px Poppins;
+   letter-spacing: 1.5px;
+   color: #fefefe;
+   opacity: 1;
+}
+.index-main .container .statement-main h1 {
+   text-align: left;
+   font: normal normal 500 70px/100px Poppins;
+   letter-spacing: 5px;
+   color: #fefefe;
+   opacity: 1;
 }
 .index-main .container .heading-1 {
    width: 50%;
@@ -61,6 +119,16 @@ body {
    align-items: flex-end;
 
    text-align: right;
+}
+.index-main .container .heading-1 h3 {
+   /* width: 500px; */
+   position: relative;
+   top: -20%;
+   text-align: right;
+   font: normal normal normal 30px/50px Poppins;
+   letter-spacing: 2px;
+   color: #fefefe;
+   opacity: 1;
 }
 
 /* Index main styling Ends here */
@@ -86,25 +154,46 @@ body {
 
 .image-container-1 {
    grid-area: 2 / 6 / 6 / 9;
-   background-color: #333;
+   /* width: 700px;
+   height: 700px; */
+   background-image: url("../images/iphone_screen_shot_2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-color: red; */
+   background-position-x: 50%;
 
-   /* height: 700px; */
+   display: grid;
+   place-items: center;
 }
 
 .heading-2 {
    grid-area: 3 / 1 / 6 / 4;
 
-   background-color: red;
    display: flex;
    justify-content: flex-start;
    align-items: center;
+
+   text-align: left;
+   font: normal normal normal 30px/50px Poppins;
+   letter-spacing: 2px;
+   color: #fefefe;
+   opacity: 1;
+   /* background-color: green; */
+   margin-left: 20px;
 }
 
 .image-container-2 {
    grid-area: 4 / 5 / 8 / 8;
-   background-color: #333;
+   /* width: 700px;
+   height: 700px; */
+   background-image: url("../images/iphone_screen_shot_1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-color: yellow; */
+   background-position-x: 50%;
 
-   /* height: 700px; */
+   display: grid;
+   place-items: center;
 }
 
 /* Index-1 styling */
@@ -113,7 +202,7 @@ body {
 .footer {
    width: 100vw;
    height: 100vh;
-   background-color: #333;
+   background-color: #222;
 
    z-index: 3;
 }
@@ -132,12 +221,47 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+   padding-top: 20px;
 }
 .footer .flex-container .footer-links li {
-   padding: 50px 0;
+   padding: 20px 0;
+   text-align: left;
+   font: normal normal normal 30px Poppins;
+   letter-spacing: 0.6px;
+   color: #fefefe;
+   opacity: 1;
 }
+.footer .flex-container .footer-links li a {
+   text-decoration: none;
+   color: #fefefe;
+
+   transition: 0.3s ease-in-out;
+}
+.footer .flex-container .footer-links li a:hover {
+   color: #6930c3;
+   transition: 0.3s ease-in-out;
+}
+
 .footer .flex-container .footer-social {
    display: flex;
    flex-direction: row;
    padding: 50px 0;
+}
+.footer-social li {
+   font-size: 40px;
+   padding: 0 30px;
+}
+.footer-social li a {
+   padding-bottom: 10px;
+   color: #fefefe;
+   text-decoration: none;
+
+   transition: 0.3s ease-in-out;
+}
+.footer-social li a:hover {
+   padding-bottom: 20px;
+   border-bottom: 4px solid #6930c3;
+   color: #8c4fee;
+   transition: 0.3s ease-in-out;
 }
