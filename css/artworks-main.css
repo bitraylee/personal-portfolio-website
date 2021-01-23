@@ -79,11 +79,39 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   background: linear-gradient(-180deg, rgba(0, 0, 0, 0), rgba(18, 18, 18, 1)),
+      url("../images/last-battle.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.banner-statement h4 {
+   padding-left: 10px;
+   text-align: left;
+   /* font: normal normal medium 100px/180px "Poppins"; */
+   font-family: "Poppins";
+   font-weight: 300;
+   font-size: 20px;
+   letter-spacing: 1.5px;
+   color: #fefefe;
+   opacity: 1;
+}
+.banner-statement h1 {
+   padding-top: 20px;
+   text-align: left;
+   /* font: normal normal medium 100px/180px "Poppins"; */
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 70px;
+   line-height: 85px;
+   letter-spacing: 5px;
+   color: #fefefe;
+   opacity: 1;
 }
 .index-banner .flex-container {
    width: 75vw;
    height: 90vh;
-   background-color: red;
+   background: none;
    display: flex;
    justify-content: flex-start;
    align-items: flex-end;
@@ -103,15 +131,31 @@ body {
    /* justify-content: center; */
    align-items: center;
 
-   background-color: greenyellow;
+   /* background-color: greenyellow; */
 }
 .index-main .artwork {
    width: 75%;
    height: 100vw;
-   background-color: red;
+   /* background-color: red; */
 
    padding: 40px 0;
 }
+.index-main .artwork-1 .title {
+   /* padding-top: 20px; */
+   text-align: right;
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 70px;
+   line-height: 85px;
+   letter-spacing: 5px;
+   color: #fefefe;
+   opacity: 1;
+
+   width: 50%;
+   position: absolute;
+   left: 40%;
+}
+
 /* Artwork 1 styling */
 .index-main .artwork-1 {
    display: flex;
@@ -123,6 +167,14 @@ body {
    height: 100vh;
    background: #333333 0% 0% no-repeat padding-box;
    opacity: 1;
+
+   z-index: -1;
+
+   background-image: url("../images/its-cold.png");
+   background-size: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* background-attachment: fixed; */
 }
 /* Artwork 2 styling */
 .index-main .artwork-2 {
@@ -139,10 +191,27 @@ body {
    display: flex;
    justify-content: flex-start;
    align-items: center;
+
+   background-image: url("../images/luminesence.png");
+   background-size: 80%;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   background-attachment: fixed;
 }
 .index-main .artwork-2 .image-container .title {
+   /* padding-top: 20px; */
+   text-align: left;
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 70px;
+   line-height: 85px;
+   letter-spacing: 5px;
    color: #fefefe;
-   font-size: 30px;
+   opacity: 1;
+
+   position: absolute;
+   left: 15%;
 }
 
 /* Artwork 3 styling */
@@ -152,11 +221,27 @@ body {
    align-items: center;
 }
 .index-main .artwork-3 .image-container {
-   width: 600px;
+   width: 700px;
    height: 100vh;
    background: #333333 0% 0% no-repeat padding-box;
    opacity: 1;
+
+   background-image: url("../images/wild-soul.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
 }
+.artwork-3 .title {
+   text-align: left;
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 70px;
+   line-height: 85px;
+   letter-spacing: 5px;
+   color: #fefefe;
+   opacity: 1;
+}
+
 /* Artwork 4 styling */
 .index-main .grid-container {
    width: 75%;
@@ -176,11 +261,23 @@ body {
    grid-area: image-container-1;
 
    background-color: #333;
+
+   background-image: url("../images/ode-to-winter.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   background-attachment: fixed;
 }
 .index-main .grid-container .image-container-2 {
    grid-area: image-container-2;
 
    background-color: #333;
+
+   background-image: url("../images/ode-to-winter.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    /* padding-top: 20px; */
 }
 .index-main .grid-container .title {
@@ -190,17 +287,32 @@ body {
    align-items: center;
    width: 100%;
    height: 100%;
+
+   text-align: right;
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 70px;
+   line-height: 85px;
+   letter-spacing: 5px;
+   color: #fefefe;
+   opacity: 1;
 }
 .index-main .grid-container .title h1 {
    text-align: right;
 }
-
+/* Statement styling */
 .index-main .statement {
    width: 100%;
    height: 300px;
    display: flex;
    justify-content: center;
    align-items: center;
+
+   text-align: center;
+   font: normal normal normal 50px/70px Airin;
+   letter-spacing: 3.5px;
+   color: #fefefe;
+   opacity: 1;
 }
 /* Index main  styling ends*/
 

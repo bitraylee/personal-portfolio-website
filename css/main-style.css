@@ -205,9 +205,11 @@ body {
    transition: 0.3s ease-in-out;
 }
 .image-container {
-   background-size: cover;
+   background-size: 80%;
    background-repeat: no-repeat;
    filter: grayscale(100%);
+   background-position: center;
+   background-attachment: fixed;
 
    transition: 0.3s ease-in-out;
 }
@@ -218,10 +220,10 @@ body {
 }
 .designs .image-container {
    background-image: url("../images/GFG-KIIT-website-poster-dark-color.png");
-   background-position: -400px;
+   /* background-position: -400px; */
 }
 .about .image-container {
-   background-image: url("../images/glitched-skull.jpg");
+   background: url("../images/glitched-skull.jpg");
 }
 
 /* Footer styling */
