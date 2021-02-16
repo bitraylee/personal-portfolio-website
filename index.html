@@ -14,6 +14,8 @@
          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
          crossorigin="anonymous"
       />
+
+      <script src="scripts/burger-menu-transition.js" defer></script>
       <title>Anshu Mohanta</title>
    </head>
    <body>
@@ -21,6 +23,13 @@
          <div class="flex-container">
             <div class="navbar-logo">
                <a href="./index.html">Anshu<br />Mohanta</a>
+            </div>
+            <div class="burger-menu cross-state" onclick="changeState()">
+               <div class="line-1" id="line-1"></div>
+               <div class="line-2-container" id="line-2-container">
+                  <div class="line-2" id="line-2"></div>
+               </div>
+               <div class="line-3" id="line-3"></div>
             </div>
             <ul class="navbar-links">
                <li><a href="./artworks.html">artworks</a></li>
