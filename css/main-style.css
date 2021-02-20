@@ -2,6 +2,7 @@
 body {
    overflow-x: hidden;
    background-color: #121212;
+   /* background-color: #6930c3; */
 }
 .navbar {
    width: 100vw;
@@ -227,12 +228,15 @@ body {
    color: #fefefe;
    opacity: 1;
 }
-.title:hover ~ .image-container {
-   width: 500px !important;
-   filter: grayscale(0);
+@media screen and (min-width: 500px) {
+   .title:hover ~ .image-container {
+      width: 500px;
+      filter: grayscale(0);
 
-   transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+   }
 }
+
 .image-container {
    background-size: 80%;
    background-repeat: no-repeat;
@@ -328,6 +332,7 @@ body {
 @media only screen and (max-width: 500px) {
    .navbar {
       position: fixed;
+      /* overflow: hidden; */
    }
    .navbar .flex-container .navbar-logo a {
       font: normal normal normal 32px/41px Airin;
@@ -407,22 +412,18 @@ body {
       position: absolute;
       top: -50px;
       left: calc(-100% - 70px);
-      display: block;
 
       width: calc(100vw + 50px);
       height: calc(100vh + 50px);
 
       display: flex;
       justify-content: flex-start;
-      align-items: center;
-
+      align-items: flex-end;
       transition: 0.3s ease-in-out;
    }
    .navbar .slide-out-menu .background-static {
       z-index: 0;
       position: absolute;
-      /* top: -50px; */
-      /* left: calc(-100% - 70px); */
       left: 0;
       display: block;
 
@@ -430,18 +431,18 @@ body {
       height: calc(100vh + 50px);
 
       transition: 0.3s ease-in-out;
-      background: repeating-linear-gradient(#111, #111 50%, #333 50%, #333);
+      background: repeating-linear-gradient(#6930c3, #111 50%, #333 50%, #333);
       background-size: 5px 5px;
       filter: url(#noise);
    }
 
    .navbar .slide-out-menu .mobile-navbar-links {
-      margin-left: 5rem;
+      margin: 0 0 3rem 5rem;
       position: relative;
-      top: 40px;
+      top: 0;
    }
    .navbar .slide-out-menu .mobile-navbar-links li {
-      padding: 50px 0;
+      padding: 2rem 0;
    }
    .navbar .slide-out-menu .mobile-navbar-links li a {
       color: #fefefe;
@@ -472,5 +473,117 @@ body {
       transform: rotate(-45deg);
 
       transition: 0.3s ease-in-out;
+   }
+
+   /* Navbar styling ends */
+
+   /* Index main Styling begins */
+   .index-banner .flex-container {
+      flex-direction: column;
+      width: 80vw;
+      height: 80vh;
+   }
+   .index-banner .flex-container .banner-statement {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   .banner-statement > * {
+      width: 100%;
+      text-align: center;
+   }
+   .index-banner .flex-container .banner-statement h4 {
+      font-size: 18px;
+      line-height: 20px;
+      padding: 10px 0;
+   }
+   .index-banner .flex-container .banner-statement h1 {
+      font-size: 40px;
+   }
+   .index-banner .flex-container .banner-links {
+      flex-direction: row;
+      width: 80vw;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+   }
+   .index-banner .flex-container .banner-links li {
+      text-align: center;
+      margin: 40px 0;
+   }
+   .index-banner .flex-container .banner-links li a {
+      position: relative;
+      top: 0;
+      padding: 10px;
+      text-decoration: none;
+      color: #fefefe;
+      text-align: center;
+
+      border-bottom: 0px solid #6930c3;
+      transition: 0.3s ease-in-out;
+   }
+   .index-banner .flex-container .banner-links li a:hover {
+      position: relative;
+      top: -20px;
+      padding: 10px;
+      border: none;
+      padding-bottom: 20px;
+      border-bottom: 5px solid #6930c3;
+      /* background-color: rgba(105, 48, 195, 0.5); */
+      transition: 0.3s ease-in-out;
+   }
+
+   .index-main {
+      width: 100vw;
+      overflow-x: hidden;
+   }
+
+   .index-main .part {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow-x: hidden !important;
+   }
+   .index-main .part .image-container {
+      width: 100px;
+      height: 100vh;
+      background-color: #333;
+      z-index: -1;
+      transform: translate(0, 0);
+      margin: 0;
+      padding: 0;
+   }
+   .index-main .part .title a {
+      font-size: 50px;
+   }
+   .index-main .type-1 .image-container {
+      transform: translate(-50vw, 0);
+      overflow-x: hidden;
+   }
+   .index-main .type-2 .image-container {
+      transform: translate(50vw, 0);
+      overflow-x: hidden;
+   }
+
+   .index-main .part .image-container {
+      left: 0;
+      top: 0;
+   }
+
+   .image-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+      background-position: center;
+      background-attachment: fixed;
+
+      /* transition: 0.3s ease-in-out; */
    }
 }

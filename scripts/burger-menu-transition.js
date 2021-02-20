@@ -13,7 +13,7 @@ function changeState(){
       line3.classList.add("cross-state-3");
       navbarOverlay.style.left="-50px";
       
-
+      document.querySelector("body").style.overflow="hidden";
       currentState="cross"
    }
    else{
@@ -23,7 +23,7 @@ function changeState(){
       line3.classList.remove("cross-state-3");
       navbarOverlay.style.left="calc(-100% - 70px)";
 
-
+      document.querySelector("body").style.overflow="scroll";
       currentState="menu";
    }
 }
