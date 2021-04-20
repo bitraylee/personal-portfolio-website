@@ -1,0 +1,51 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+
+      <script src="script.js" defer></script>
+
+      <title>Reveal Animation JS</title>
+   </head>
+   <body>
+      <section class="index-main">
+         <div class="reveal-text-box">
+            <h1 class="anim1">
+               <span class="text">Hey there,<span class="overlap"></span></span>
+               <span class="text"
+                  >This is Anshu<span class="overlap"></span
+               ></span>
+            </h1>
+         </div>
+      </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+      <script>
+         var rule = CSSRulePlugin.getRule("span:after");
+         gsap.from(".anim1 .text", {
+            opacity: 0,
+            // transform: "rotate(350deg) skew(-12deg, 0deg)",
+            duration: 1,
+            y: 100,
+            stagger: 0.6,
+            // ease: "Power2.easeInOut",
+         });
+         gsap.to(".anim1 .overlap", {
+            scaleY: 0,
+            duration: 1,
+            stagger: 0.6,
+         });
+         // gsap.from(".anim1", { duration: 1, y: -50, opacity: 0, stagger: 0.6 });
+
+         gsap.to(rule, {
+            cssRule: {
+               scaleY: 0,
+            },
+            duration: 1,
+         });
+      </script>
+   </body>
+</html>

@@ -70,6 +70,10 @@ body {
    opacity: 1;
 }
 
+.navbar .slide-out-menu {
+   display: none;
+}
+
 /* Navbar Styling ends */
 
 /* Index banner stying starts */
@@ -548,18 +552,24 @@ body {
    .index-banner .flex-container .banner-statement h4,
    h1 {
       width: 100%;
-      text-align: center;
+      text-align: left;
    }
 
    .index-banner .flex-container .banner-statement h4 {
-      font-size: 20px;
+      font-size: 14px;
       padding: 0;
+      height: fit-content;
+      padding-bottom: 10px;
+      letter-spacing: 0.3px;
    }
    .index-banner .flex-container .banner-statement h1 {
-      padding-top: 0;
-
-      font-size: 50px;
-      text-align: center;
+      padding: 0;
+      font-size: 30px;
+      text-align: left;
+      width: 100%;
+      height: fit-content;
+      line-height: 30px;
+      padding-bottom: 50px;
    }
 
    /* Index Banner styling ends here*/
@@ -578,22 +588,17 @@ body {
       display: flex;
       justify-content: center;
       place-items: flex-end;
-
       position: fixed;
-      top: 0;
+      top: -70vh;
       left: 0;
-      /* top: 0;
-      left: 0; */
       z-index: 1;
-
-      /* display: none; */
    }
    .index-main-mobile .title h1 {
       width: 60%;
       font-family: "Poppins";
-      font-size: 24px;
-      margin: 30px;
-      color: red;
+      font-size: 22px;
+      margin: 5vh 12.5vw;
+      color: #fefefe;
       text-align: center;
    }
 

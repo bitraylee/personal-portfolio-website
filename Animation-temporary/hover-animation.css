@@ -1,0 +1,46 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+main {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #121212;
+}
+
+main .hover-container button {
+   background: none;
+   border: none;
+   width: 200px;
+   height: 200px;
+   /* background-color: red; */
+}
+main .hover-container button a {
+   text-decoration: none;
+   font-family: "Poppins";
+   font-weight: 700;
+   font-size: 50px;
+   width: inherit;
+   height: inherit;
+   color: #fefefe;
+}
+
+.underline-animate .underline {
+   display: block;
+   content: " ";
+   position: relative;
+   top: 20px;
+   background-color: #fefefe;
+   transform: scaleX(0);
+   height: 10px;
+   transform-origin: left;
+}
